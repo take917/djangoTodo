@@ -9,9 +9,7 @@ class Task(models.Model):
     createdDate = models.DateTimeField(auto_now_add=True)
 
     # admin page　are displayed with objects and numbers
-    # Fixed to be task name
-    
-     
+    # Fixed to be task name 
     def __str__(self):
         return self.title
 
