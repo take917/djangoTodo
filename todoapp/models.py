@@ -8,8 +8,10 @@ class Task(models.Model):
     completed = models.BooleanField(default=False)
     createdDate = models.DateTimeField(auto_now_add=True)
 
-def __str__(self):
-    return self.title
+    # admin page　are displayed with objects and numbers
+    # Fixed to be task name 
+    def __str__(self):
+        return self.title
 
 class Meta:
     ordering = ["completed"]
